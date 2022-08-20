@@ -21,12 +21,29 @@ test("Verifica se existe leite na minha lista ", () => {
     expect(listaDeCompras).toContain("leite")
 });
 
+
 //testar se a funcao calcular valor hora
 test("Qual valor hora, de um salário de 1500", () => {
-    const salario = 1500
-    const valorHora = calcularValorPorHora(salario)
-    const resultado = 9
-    console.log(valorHora)
+    //const salario = 1500
+    //const valorHora = calcularValorPorHora(salario)
+    //const resultado = 9
+    //console.log(valorHora)
+    //expect(valorHora).toBe(resultado)
 
-    expect(valorHora).toBe(resultado)
+    //forma mais pratica abaixo, em comparação acima
+    //valor sao fixos para testar a função, tipo mock
+    expect(calcularValorPorHora(1500)).toBe(9)
 })
+
+
+describe("Teste contas matemáticas", () =>{
+    test("Soma", () => {
+        expect(10 + 10).toBe(20)
+    });
+
+    test("Multiplicação", () => {
+        expect(10 * 10).toBe(50)
+    })
+})
+
+
