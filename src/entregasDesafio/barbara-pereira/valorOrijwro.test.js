@@ -1,0 +1,1 @@
+const { calcularHorasDeProjeto } = require("../../dominio/calculadora/Projeto/valorProjeto")
