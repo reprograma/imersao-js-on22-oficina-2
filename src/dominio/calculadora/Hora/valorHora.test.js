@@ -6,5 +6,5 @@ test("Esse teste é uma soma de 1 + 1 ", () =>{
 
 
 test("Teste se 2 * 2 = 4", () =>{
-    expect(2 * 2).toBe(4)
+    expect(2 * 2).not.toBe(8)
 });
