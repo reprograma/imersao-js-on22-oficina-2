@@ -17,7 +17,15 @@ const listaDeCompras = [
     "carne"
 ]
 
-test("Verifica se existe leite na minha lista ", () =>{
+test("Verifica se existe leite na minha lista ", () => {
     expect(listaDeCompras).toContain("leite")
 });
 
+test("Qual valor hora, de um salário de 1500", () => {
+    const salario = 1500
+    const valorHora = calcularValorPorHora(salario)
+    const resultado = 9
+    console.log(valorHora)
+
+    expect(valorHora).toBe(resultado)
+})
