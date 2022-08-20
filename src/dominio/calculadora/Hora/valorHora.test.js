@@ -21,6 +21,7 @@ test("Verifica se existe leite na minha lista ", () => {
     expect(listaDeCompras).toContain("leite")
 });
 
+//testar se a funcao calcular valor hora
 test("Qual valor hora, de um salário de 1500", () => {
     const salario = 1500
     const valorHora = calcularValorPorHora(salario)
