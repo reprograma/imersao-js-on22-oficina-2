@@ -37,12 +37,13 @@ test("Qual valor hora, de um salário de 1500", () => {
 
 
 describe("Teste contas matemáticas", () =>{
+    
     test("Soma", () => {
         expect(10 + 10).toBe(20)
     });
 
     test("Multiplicação", () => {
-        expect(10 * 10).toBe(50)
+        expect(10 * 10).toBe(100)
     })
 })
 
