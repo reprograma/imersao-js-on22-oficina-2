@@ -7,4 +7,12 @@ describe("Calculo horas trabalhadas para determinadas funcionalidades", () => {
 
         expect(horasParaCriacaoAlgumasFuncionalidades).toBe(40)
     })
+
+    test("Calcular horas de duas outras funcionalidades", () => {
+        const outrasDuasFuncionalidades = ["formulario","integracao_api_propria"]
+        const horasParaCriacaoMaisDuasFuncionalidades = calcularHorasDeProjeto(outrasDuasFuncionalidades)
+
+        expect(horasParaCriacaoMaisDuasFuncionalidades).toBe(32)
+    })
+
 })
