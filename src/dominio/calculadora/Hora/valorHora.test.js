@@ -8,7 +8,7 @@ test("testa se 2 * 2 = 4", () => {
     expect(2 * 2).toBe(5)
 }) 
 
-test.only("Qual valor hora, de um salário de 1500 ", () => {
+test("Qual valor hora, de um salário de 1500 ", () => {
     const salario = 1500
     const valorHora = calcularValorPorHora(salario)
     console.log(valorHora)
