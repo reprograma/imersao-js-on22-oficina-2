@@ -19,7 +19,7 @@ describe("Calculo Valor Total de horas trabalhada", () => {
             "integracao_api_propria"
         ]
         const valorHoraTrabalhada = 9         
-        expect(calcularValorTotalProjeto(listaFuncionalidades, valorHoraTrabalhada)).toBe(1404)
+        expect(calcularValorTotalProjeto(listaFuncionalidades, valorHoraTrabalhada)).toBe(1076)
     })
 
     test("Valor recebido por trabalhar em 7 funcionalidades -> 96 horas- PACOTE INTERMEDIARIO", () => {
@@ -33,7 +33,7 @@ describe("Calculo Valor Total de horas trabalhada", () => {
             "integracao_api_propria"
         ]
         const valorHoraTrabalhada = 9
-        expect(calcularValorTotalProjeto(listaFuncionalidades, valorHoraTrabalhada)).toBe(1037)
+        expect(calcularValorTotalProjeto(listaFuncionalidades, valorHoraTrabalhada)).toBe(968)
     })
     test("Valor recebido por trabalhar em 4 funcionalidades -> 56 horas - PACOTE INTERMEDIARIO", () => {
         const listaFuncionalidades = [
@@ -43,7 +43,7 @@ describe("Calculo Valor Total de horas trabalhada", () => {
             "otimizacao_seo",
         ]
         const valorHoraTrabalhada = 9
-        expect(calcularValorTotalProjeto(listaFuncionalidades, valorHoraTrabalhada)).toBe(604)
+        expect(calcularValorTotalProjeto(listaFuncionalidades, valorHoraTrabalhada)).toBe(564)
     })
 
     test("Valor recebido por trabalhar em 4 funcionalidades -> 48 horas - PACOTE BASICO", () => {
