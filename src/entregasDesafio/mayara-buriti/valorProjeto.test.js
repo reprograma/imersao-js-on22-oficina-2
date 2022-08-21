@@ -17,10 +17,11 @@ test('Valor total do projeto de 100h com taxa de 12%', () => {
     'construcao_1_pagina',
     'integracao_mailchimp',
     'ssr',
-    'integracao_api_propria'
+    'integracao_api_propria',
+    'formulario'
   ]
   const valorHora = 9
-  expect(calcularValorTotalProjeto(listaDeFuncionalidades, valorHora)).toBe(864)
+  expect(calcularValorTotalProjeto(listaDeFuncionalidades, valorHora)).toBe(968)
 })
 
 test('Valor total do projeto de 200h com taxa de 15%', () => {
@@ -33,9 +34,10 @@ test('Valor total do projeto de 200h com taxa de 15%', () => {
     'integracao_mailchimp',
     'ssr',
     'integracao_api_propria'
+
   ]
   const valorHora = 9
-  expect(calcularValorTotalProjeto(listaDeFuncionalidades, valorHora)).toBe(1404)
+  expect(calcularValorTotalProjeto(listaDeFuncionalidades, valorHora)).toBe(1076)
 })
 
 describe('Testar valores errados de acordo com cada porcentagem de progeto', () =>{
@@ -45,7 +47,7 @@ describe('Testar valores errados de acordo com cada porcentagem de progeto', () 
       'formulario',
       'responsividade'
     ]
-    const valorHora = 10
+    const valorHora = 9
     expect(calcularValorTotalProjeto(listaDeFuncionalidades, valorHora)).not.toBe(410)
 })
 
@@ -58,7 +60,7 @@ test('Valor total do projeto de 100h com taxa de 12%', () => {
     'ssr',
     'integracao_api_propria'
   ]
-  const valorHora = 10
+  const valorHora = 9
   expect(calcularValorTotalProjeto(listaDeFuncionalidades, valorHora)).not.toBe(920)
 })
 
@@ -73,7 +75,8 @@ test('Valor total do projeto de 200h com taxa de 15%', () => {
     'ssr',
     'integracao_api_propria'
   ]
-  const valorHora = 10
+  const valorHora = 9
   expect(calcularValorTotalProjeto(listaDeFuncionalidades, valorHora)).not.toBe(1500)
 })
 })
+
