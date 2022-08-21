@@ -42,7 +42,7 @@ describe("Valores do Projeto", () => {
       "integracao_api_propria",
     ];
     const valorTotalDoProjeto = calcularValorTotalProjeto(funcionalidadesContratadas, valorPorHora)
-    expect(valorTotalDoProjeto).toBe(1152)
+    expect(valorTotalDoProjeto).toBe(1075)
   })
 
   test('Deve calcular o valor do projeto no pacote premium ', () => {
@@ -56,7 +56,8 @@ describe("Valores do Projeto", () => {
       "ssr",
       "integracao_api_propria",
     ];
+    console.log(valorPorHora)
     const valorTotalDoProjeto = calcularValorTotalProjeto(funcionalidadesContratadas, valorPorHora)
-    expect(valorTotalDoProjeto).toBe(2340)
+    expect(valorTotalDoProjeto).toBe(1794)
   })
 });
