@@ -15,7 +15,7 @@ describe("Calcular Valor Total Projeto Pacote Básico", () => {
     })
 });
 
-//prova real = 80h x $9 x 1.2% = $864
+//prova real = 80h x $9 x 1.12% = $806
 describe("Calcular Valor Total Projeto Pacote Intermediário", () => {
     test("Total Projeto Pacote Intermediário", () => {
         const listaFuncionalidadesTrabalhadas = [
@@ -28,11 +28,11 @@ describe("Calcular Valor Total Projeto Pacote Intermediário", () => {
         const valorHoras = 9
 
 
-        expect(calcularValorTotalProjeto(listaFuncionalidadesTrabalhadas, valorHoras)).toBe(864)
+        expect(calcularValorTotalProjeto(listaFuncionalidadesTrabalhadas, valorHoras)).toBe(806)
     })
 });
 
-//prova real = 104h x $9 x 1.5% = $1404
+//prova real = 120h x $9 x 1.15% = $1242
 describe("Calcular Valor Total Projeto Pacote Premium", () => {
     test("Total Projeto Pacote Premium", () => {
         const listaFuncionalidadesTrabalhadas = [
@@ -43,13 +43,14 @@ describe("Calcular Valor Total Projeto Pacote Premium", () => {
             "construcao_1_pagina",
             "integracao_mailchimp",
             "ssr",
-            "integracao_api_propria"
+            "integracao_api_propria",
+            "formulario"
           ];
 
         const valorHoras = 9
 
 
-        expect(calcularValorTotalProjeto(listaFuncionalidadesTrabalhadas, valorHoras)).toBe(1404)
+        expect(calcularValorTotalProjeto(listaFuncionalidadesTrabalhadas, valorHoras)).toBe(1242)
     })
 });
 
