@@ -10,7 +10,7 @@ describe("Calculo do valor total do projeto", ()=>{
         ]
         const valorHora = 9
 
-        expect(calcularValorTotalProjeto(funcionalidades, valorHora)).toEqual(605)
+        expect(calcularValorTotalProjeto(funcionalidades, valorHora)).toEqual(564)
     })
     
     test("Calcular valor de um projeto com 2 funcionalidades no pacote basico", () =>{
@@ -36,7 +36,7 @@ describe("Calculo do valor total do projeto", ()=>{
         ]
         const valorHora = 9
 
-        expect(calcularValorTotalProjeto(funcionalidades, valorHora)).toEqual(1404)
+        expect(calcularValorTotalProjeto(funcionalidades, valorHora)).toEqual(1076)
     })
 
     test("Validar se funcionalidades e valorHora estão definidos", () =>{
